@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title><%= full_title yield :title %></title>
+    <meta charset="utf-8" />
+    <%= csrf_meta_tags %> 
+    <%= csp_meta_tag %> 
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %> 
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
   </head>
 
   <body>
-    <%= yield %>
-  </body>
+    <%= render "layouts/header" %>
+    <div class="container">
+      <%= link_to t(".english"), {locale: :en}, class: "btn btn-lg btn-primary" %>
+      <%= link_to t(".vietnamese"), {locale: :vi}, class: "btn btn-lg btn-primary" %>
+      <%= yield %>
+    </div>
+ </body>
 </html>

@@ -1,0 +1,31 @@
+vi:
+  title: "App mẫu hướng dẫn Ruby on Rails"
+  layouts:
+    application:
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+    header:
+      sample_app: "ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Hỗ trợ"
+      log_in: "Đăng nhập"
+  static_pages:
+    home:
+      welcome: "Chào mừng đến với app mẫu"
+      home_page: "Trang chủ"
+      book: "hướng dẫn Ruby on Rails"
+      sample_application: ""
+      sign_up_now: "Đăng ký ngay!"
+    help:
+      help: "Hỗ trợ"
+      tutorial: "Xem hướng dẫn về Ruby on Rails tại"
+      section:
+      see: ". Xem chi tiết app mẫu tại"
+      rail_tutorial: "Hướng dẫn Ruby on Rails"
+      book: ""
+    contact:
+      contact: "Tham khảo"
+      sample_app: "App mẫu"
+      contact_page: "Trang tham khảo"
+      rail_tutorial: "Hướng dẫn Ruby on Rails"
+      sample_application: ""
