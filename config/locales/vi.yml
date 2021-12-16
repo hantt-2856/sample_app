@@ -29,3 +29,10 @@ vi:
       contact_page: "Trang tham khảo"
       rail_tutorial: "Hướng dẫn Ruby on Rails"
       sample_application: ""
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              presence_message: "Vui lòng nhập trường này"
