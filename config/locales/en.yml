@@ -8,7 +8,13 @@ en:
       sample_app: "sample app"
       home: "Home"
       help: "Help"
-      log_in: "Log in"
+      log_in: "Sign in"
+    footer:
+      about: "About"
+      news: "News"
+      contact: "Contact"
+      tutorial: "Ruby on Rails Tutorial by"
+      author_name: "Michael Hartl"
   static_pages:
     home:
       welcome: "Welcome to the Sample App"
@@ -30,9 +36,38 @@ en:
       rail_tutorial: "Ruby on Rails Tutorial"
       sample_application: ""
   activerecord:
+    user:
+      attributes:
+        name: "Name"
+        email: "Email"
+        password: "Password"
     errors:
       models:
         user:
           attributes:
             name:
               presence_message: "Please enter this field"
+  users:
+    new:
+      sign_up: "Sign up"
+      create_my_account: "Create my account"
+      confirmation: "Confirmation"
+    create:
+      success_mes: "App mẫu xin chào!"
+      danger_mes: "Đăng ký thất bại"
+    show:
+      not_found: "Not found this user"
+  success_mes: "Welcome to the Sample App!"
+  danger_mes: "Sign up fail!"
+  shared:
+    error_messages:
+      error_mes: "The form contains"
+      error: "error."
+      errors: "errors."
+  sessions:
+    new:
+      log_in: "Log in"
+    create:
+      invalid_email_password_combination: "Invalid email password combination"
+
+  

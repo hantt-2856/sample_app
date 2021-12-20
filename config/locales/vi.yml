@@ -9,6 +9,12 @@ vi:
       home: "Trang chủ"
       help: "Hỗ trợ"
       log_in: "Đăng nhập"
+    footer:
+      about: "Thông tin"
+      news: "Tin tức"
+      contact: "Liên hệ"
+      tutorial: "Hướng dẫn ruby on rails bởi"
+      author_name: "Michael Hartl"
   static_pages:
     home:
       welcome: "Chào mừng đến với app mẫu"
@@ -30,9 +36,34 @@ vi:
       rail_tutorial: "Hướng dẫn Ruby on Rails"
       sample_application: ""
   activerecord:
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
     errors:
       models:
         user:
           attributes:
             name:
               presence_message: "Vui lòng nhập trường này"
+  users:
+    new:
+      sign_up: "Đăng ký"
+      create_my_account: "Tạo tài khoản"
+      confirmation: "Xác nhận mật khẩu"
+    create:
+      success_mes: "App mẫu xin chào!"
+      danger_mes: "Đăng ký thất bại"
+    show:
+      not_found: "Người dùng không tồn tại."
+  shared:
+    error_messages:
+      error_mes: "Biểu mẫu có "
+      error: "lỗi."
+      errors: "lỗi."
+  sessions:
+    new:
+      log_in: "Đăng nhập"
+    create:
+      invalid_email_password_combination: "Email và mật khẩu không hơp lệ"
