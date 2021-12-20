@@ -29,3 +29,10 @@ en:
       contact_page: "Contact page"
       rail_tutorial: "Ruby on Rails Tutorial"
       sample_application: ""
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              presence_message: "Please enter this field"
