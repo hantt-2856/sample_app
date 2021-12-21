@@ -2,5 +2,7 @@ length:
   min_6: 6
   max_50: 50
   max_255: 255
+options:
+  avatar_size_default: 150
 format:
   VALID_EMAIL_REGEX: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i

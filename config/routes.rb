@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get "users/new"
-    root "static_pages#home"
-    get "static_pages/help" 
-    get "static_pages/contact" 
+  get "static_pages/help"
+  get "static_pages/contact"
+  get "/signup", to: "users#new"
+  resources :users, only: %i(create show)
+  root "static_pages#home"
 end
