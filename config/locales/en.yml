@@ -54,6 +54,7 @@ en:
             name:
               presence_message: "Please enter this field"
   users:
+    not_found: "Not found this user"
     new:
       sign_up: "Sign up"
       create_my_account: "Create my account"
@@ -61,8 +62,23 @@ en:
     create:
       success_mes: "App mẫu xin chào!"
       danger_mes: "Đăng ký thất bại"
-    show:
-      not_found: "Not found this user"
+      edit:
+      update_profile: "Update your profile"
+      confirmation: "Confirmation"
+      save_change: "Save change"
+      change: "Change"
+      update_profile: "Update your profile"
+    update:
+      profile_updated: "Profile updated!"
+    index:
+      list_user: "All users"
+    user:
+      you_sure: "Are you sure?"
+      delete: "Delete"
+    destroy:
+      user_deleted: "User deleted"
+      delete_fail: "Delete fail!"
+
   success_mes: "Welcome to the Sample App!"
   danger_mes: "Sign up fail!"
   shared:

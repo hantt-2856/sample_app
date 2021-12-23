@@ -1,8 +1,8 @@
 length:
-  min_6: 6
-  max_50: 50
-  max_255: 255
-options:
-  avatar_size_default: 150
+  digit_6: 6
+  digit_255: 255
+size_img_80: 80
 format:
   VALID_EMAIL_REGEX: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+per_page_10: 10
+gravatar_link: "http://gravatar.com/emails"

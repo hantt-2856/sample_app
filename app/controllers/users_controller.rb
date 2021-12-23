@@ -1,11 +1,13 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
-    return if @user
+  before_action :logged_in_user, except: %i(new create show)
+  before_action :find_user, except: %i(index new create)
+  before_action :correct_user, only: %i(edit update)
 
-    flash[:danger] = t ".not_found"
-    redirect_to signup_path
+  def index
+    @pagy, @users = pagy(User.sort_by_name, items: Settings.per_page_10)
   end
+
+  def show; end
 
   def new
     @user = User.new
@@ -19,8 +21,29 @@ class UsersController < ApplicationController
       redirect_to login_path
     else
       flash.now[:danger] = t ".danger_mes"
-      render "new"
+      render :new
     end
+  end
+
+  def edit; end
+
+  def update
+    if @user.update user_params
+      flash[:success] = t ".profile_updated"
+      redirect_to @user
+    else
+      flash.now[:danger] = t ".update_fail"
+      render :edit
+    end
+  end
+
+  def destroy
+    if @user&.destroy
+      flash[:success] = t ".user_deleted"
+    else
+      flash[:danger] = t ".delete_fail"
+    end
+    redirect_to users_url
   end
 
   private
@@ -28,5 +51,25 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation)
+  end
+
+  def logged_in_user
+    return if logged_in?
+
+    store_loaction
+    flash[:danger] = t ".please_log_in"
+    redirect_to login_url
+  end
+
+  def find_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:danger] = t ".not_found"
+    redirect_to signup_path
+  end
+
+  def correct_user
+    redirect_to root_url unless current_user? @user
   end
 end

@@ -1,0 +1,9 @@
+<li>
+  <%= gravatar_for user %>
+  <%= link_to user.name, user %>
+  <%= user.email %>
+  <% if is_admin? user %>
+    <%= link_to t(".delete"), user, method: :delete,
+     data: {confirm: t(".you_sure")} %>
+  <% end %>
+</li>

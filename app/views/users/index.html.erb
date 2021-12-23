@@ -1,0 +1,6 @@
+<% provide :title, t(".list_user") %>
+<h1 class="text-center"><%= t ".list_user" %></h1>
+<ul class="users">
+  <%= render @users %>
+</ul>
+<%== pagy_bootstrap_nav(@pagy) %>
