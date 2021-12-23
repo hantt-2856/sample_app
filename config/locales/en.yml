@@ -62,14 +62,17 @@ en:
     create:
       success_mes: "App mẫu xin chào!"
       danger_mes: "Đăng ký thất bại"
-      edit:
+      check_email: "Account not activated! Please check email for activate"
+    edit:
       update_profile: "Update your profile"
       confirmation: "Confirmation"
       save_change: "Save change"
       change: "Change"
       update_profile: "Update your profile"
+      not_found: "Not found this user"
     update:
       profile_updated: "Profile updated!"
+      update_fail: "Updating profile fail!"
     index:
       list_user: "All users"
     user:
@@ -96,3 +99,13 @@ en:
       remember_me: "Remember me on this computer"
     create:
       invalid_email_password_combination: "Invalid email password combination"
+      account_not_activated: "Account npt activated. Check your email for the activation link"
+  user_mailer:
+    account_activation:
+      subject: "Welcome to the Sample App! Click on the link below to activate your account"
+      activate: "Activate"
+      sample_app: "Sample App"
+  account_activations:
+    edit:
+      account_activated: "Account activated"
+      invalid_activation_link: "Invalid activation link!"

@@ -62,14 +62,19 @@ vi:
     create:
       success_mes: "App mẫu xin chào!"
       danger_mes: "Đăng ký thất bại"
+      check_email: "Vui lòng kiểm tra email để kích hoạt tài khoản"
+    show:
+      not_found: "Người dùng không tồn tại."
     edit:
       update_profile: "Update your profile"
       confirmation: "Xác nhận mật khẩu"
       save_change: "Cập nhật"
       change: "Thay đổi"
       update_profile: "Cập nhật hồ sơ"
+      not_found: "Người dùng không tồn tại."
     update:
       profile_updated: "Cập nhật hồ sơ thành công!"
+      update_fail: "Cập nhật hồ sơ thất bại!"
     index:
       list_user: "Danh sách người dùng"
     user:
@@ -93,3 +98,14 @@ vi:
       remember_me: "Ghi nhớ thông tin đăng nhập"
     create:
       invalid_email_password_combination: "Email và mật khẩu không hơp lệ"
+      account_not_activated: "Tài khoản chưa kích hoạt. Vui lòng kiểm tra email để kích hoạt tài khoản!"
+
+  user_mailer:
+    account_activation:
+      subject: "Chào mừng đến với ứng dụng mẫu! Vui lòng nhấn vào link phía dưới để kích hoạt tài khoản"
+      activate: "Kích hoạt tài khoản"
+      sample_app: "Ứng dụng mẫu"
+  account_activations:
+    edit:
+      account_activated: "Đã kích hoạt tài khoản"
+      invalid_activation_link: "Link kích hoạt tài khoản không hợp lệ"
