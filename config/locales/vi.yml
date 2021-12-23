@@ -9,6 +9,12 @@ vi:
       home: "Trang chủ"
       help: "Hỗ trợ"
       log_in: "Đăng nhập"
+      account: "Tài khoản"
+      users: "Người dùng"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
+      login: "Đăng nhập"
     footer:
       about: "Thông tin"
       news: "Tin tức"
@@ -65,5 +71,9 @@ vi:
   sessions:
     new:
       log_in: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      new_user: "Người dùng mới?"
+      sign_up_now: "Đăng ký ngay?"
     create:
       invalid_email_password_combination: "Email và mật khẩu không hơp lệ"
