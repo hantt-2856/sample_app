@@ -54,6 +54,7 @@ vi:
             name:
               presence_message: "Vui lòng nhập trường này"
   users:
+    not_found: "Người dùng không tồn tại."
     new:
       sign_up: "Đăng ký"
       create_my_account: "Tạo tài khoản"
@@ -61,8 +62,22 @@ vi:
     create:
       success_mes: "App mẫu xin chào!"
       danger_mes: "Đăng ký thất bại"
-    show:
-      not_found: "Người dùng không tồn tại."
+    edit:
+      update_profile: "Update your profile"
+      confirmation: "Xác nhận mật khẩu"
+      save_change: "Cập nhật"
+      change: "Thay đổi"
+      update_profile: "Cập nhật hồ sơ"
+    update:
+      profile_updated: "Cập nhật hồ sơ thành công!"
+    index:
+      list_user: "Danh sách người dùng"
+    user:
+      you_sure: "Xác nhận xóa"
+      delete: "Xóa"
+    destroy:
+      user_deleted: "Xóa thành công"
+      delete_fail: "Xóa thất bại!"
   shared:
     error_messages:
       error_mes: "Biểu mẫu có "
