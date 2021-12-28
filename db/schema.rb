@@ -1,4 +1,4 @@
-ActiveRecord::Schema.define(version: 2021_12_27_034000) do
+ActiveRecord::Schema.define(version: 2021_12_28_061843) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -11,6 +11,8 @@ ActiveRecord::Schema.define(version: 2021_12_27_034000) do
     t.string "activation_digest"
     t.boolean "activated", default: false
     t.datetime "activated_at"
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
   end
 
 end
