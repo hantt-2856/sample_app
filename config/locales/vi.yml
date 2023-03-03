@@ -96,6 +96,7 @@ vi:
       new_user: "Người dùng mới?"
       sign_up_now: "Đăng ký ngay?"
       remember_me: "Ghi nhớ thông tin đăng nhập"
+      forgot_password: "Quên mật khẩu?"
     create:
       invalid_email_password_combination: "Email và mật khẩu không hơp lệ"
       account_not_activated: "Tài khoản chưa kích hoạt. Vui lòng kiểm tra email để kích hoạt tài khoản!"
@@ -105,7 +106,31 @@ vi:
       subject: "Chào mừng đến với ứng dụng mẫu! Vui lòng nhấn vào link phía dưới để kích hoạt tài khoản"
       activate: "Kích hoạt tài khoản"
       sample_app: "Ứng dụng mẫu"
+    password_reset:
+      password_reset: "Đặt lại mật khẩu"
+      click_link: "Nhấn vào link bên dưới để đặt lại mật khẩu"
+      expire_time: "Đường link này có hiệu lực trong 2 giờ"
+      ignore_this_email: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên không đổi"
   account_activations:
     edit:
       account_activated: "Đã kích hoạt tài khoản"
       invalid_activation_link: "Link kích hoạt tài khoản không hợp lệ"
+  password_resets:
+    user_not_found: "Không tìm thấy tài khoản"
+    new:
+      submit: "Gửi"
+      forgot_password: "Quên mật khẩu"
+    create:
+      sent_password_reset: "Email đã được gửi kèm với hướng dẫn đặt lại mật khẩu"
+      email_not_found: "Không tìm thấy địa chỉ email"
+    edit:
+      password_reset: "Đặt lại mật khẩu"
+      password_reset_expired: "Link đặt lại mật khẩu  đã hết hạn"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      update_password: "Cập nhật mật khẩu" 
+    update:
+      password_has_been_reset: "Mật khẩu đã được đặt lại"
+      password_reset_fail: "Đặt lại mật khẩu thất bại"
+      password_reset_expired: "Link đặt lại mật khẩu  đã hết hạn"
+      can_not_empty: "không được trống"
